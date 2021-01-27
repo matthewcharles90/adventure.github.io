@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="activity">
+        <header>
+            <h2 class="logo">Adventure</h2>
+            <div class="toggle"></div>
+        </header>
+
+        <video src="Video/flyhigh.mp4" muted loop autoplay></video>
+
+        <div class="overlay"></div>
+
+        <div class="text">
+        <h2>Enjoy Life</h2>
+        <h3>In Exciting Ways</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Accusantium placeat voluptas a incidunt harum? Rem aperiam ipsa 
+            rerum qui mollitia.</p>
+            <a href="#">Explore</a>
+        </div>
+
+        <ul class="social">
+            <li><a href="#"><img src="Images/facebook (6).png" alt="facebook"></li></a>
+            <li><a href="#"><img src="Images/instagram (5).png" alt="instagram"></li></a>
+        </ul>
+    </section>
+
+    <div class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Log In</a></li>
+        </ul>
+    </div>
+
+    <script>
+        const menuToggle = document.querySelector('.toggle')
+        const activity = document.querySelector('.activity')
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active')
+            activity.classList.toggle('active')
+        })
+
+    </script>
+    
+</body>
+</html>
